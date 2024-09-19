@@ -13,7 +13,7 @@ object OneSignalApi {
         .build()
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://api.onesignal.com/api/v1/") // Base URL for OneSignal API
+        .baseUrl("https://api.onesignal.com/") // Base URL for OneSignal API
         .addConverterFactory(GsonConverterFactory.create())
         .client(okHttpClient)
         .build()

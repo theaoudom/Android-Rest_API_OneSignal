@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
                         modifier = Modifier
                             .clickable {
                                 sendPushNotification(
-                                    subscriptionIds = listOf("9bf935c3-f323-440a-9cdf-2d14ddc46b46","09f167ed-f331-4b9d-9020-16fc05adbb2b"), // Replace with actual subscription IDs
+                                    subscriptionIds = listOf("9bf935c3-f323-440a-9cdf-2d14ddc46b46","4e1d8e7f-f4d5-4502-aacf-aade34deafe2","09f167ed-f331-4b9d-9020-16fc05adbb2b"), // Replace with actual subscription IDs
                                     title = "English Title",
                                     message = "English Message"
                                 )

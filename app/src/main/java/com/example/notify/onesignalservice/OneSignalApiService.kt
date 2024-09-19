@@ -22,10 +22,10 @@ import retrofit2.Call
 
 interface OneSignalApiService {
     @Headers(
-        "Content-Type: application/json; charset=utf-8",
-        "Authorization: Basic NmI0Y2IxN2EtNzExZC00MGNmLWJmZTMtZjE3ZDI3ZThmZGY1" // Replace with your REST API key
+        "Content-Type: application/json",
+        "Authorization: Bearer ZTJhYTJiYjYtMDViMC00ZTJjLTgxOWEtMWIxNTI2NTc0MzBk" // Replace with your REST API key
     )
-    @POST("notifications")
+    @POST("notifications?c=push")
     fun createNotification(@Body notification: OneSignalNotification): Call<Unit>
 }
 
